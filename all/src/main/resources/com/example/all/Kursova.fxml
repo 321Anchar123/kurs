@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1137.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.all.Controller">
+  <tabs>
+
+
+
+    <Tab text="Drivers">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="676.0" prefWidth="247.0" style="-fx-background-color: #e8e8e8;">
+                     <children>
+                        <Button layoutX="24.0" layoutY="338.0" mnemonicParsing="false" onAction="#OutDriverFile" prefHeight="0.0" prefWidth="200.0" text="Output Flile">
+                           <font>
+                              <Font name="Cambria Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="24.0" layoutY="392.0" mnemonicParsing="false" onAction="#AddtoFileDriver" prefHeight="0.0" prefWidth="200.0" text="Add to File">
+                           <font>
+                              <Font name="Cambria Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="24.0" layoutY="449.0" mnemonicParsing="false" onAction="#RedactFileDriver" prefHeight="0.0" prefWidth="200.0" text="Edit a File">
+                           <font>
+                              <Font name="Cambria Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="24.0" layoutY="506.0" mnemonicParsing="false" onAction="#DeleteFileDriver" prefHeight="0.0" prefWidth="200.0" text="Delete from File">
+                           <font>
+                              <Font name="Cambria Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="24.0" layoutY="563.0" mnemonicParsing="false" onAction="#SortFileDriver" prefHeight="0.0" prefWidth="200.0" text="Sort File">
+                           <font>
+                              <Font name="Cambria Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button onAction="#SearchD" layoutX="24.0" layoutY="617.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="200.0" text="Search in File">
+                           <font>
+                              <Font name="Cambria Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <TextArea fx:id="ID" layoutX="13.0" layoutY="33.0" prefHeight="288.0" prefWidth="221.0">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font></TextArea>
+                        <Label alignment="CENTER" layoutX="3.0" layoutY="7.0" prefHeight="22.0" prefWidth="242.0" text="Information for driver">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="12.0" layoutY="33.0" prefHeight="288.0" prefWidth="223.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="247.0" prefHeight="675.0" prefWidth="890.0">
+                     <children>
+                        <Label fx:id="AfD" alignment="CENTER" contentDisplay="CENTER" layoutX="358.0" prefHeight="22.0" prefWidth="176.0" style="-fx-background-color: #e8e8e8;" text="Action" textAlignment="CENTER">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="TAfD" layoutX="15.0" layoutY="37.0" prefHeight="582.0" prefWidth="862.0">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font></TextArea>
+                        <Pane layoutX="13.0" layoutY="35.0" prefHeight="586.0" prefWidth="866.0" />
+                        <TextField fx:id="TFfD" layoutX="15.0" layoutY="630.0" onKeyPressed="#PressEnterD" prefHeight="31.0" prefWidth="864.0" promptText="Edit">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </content></Tab>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <Tab text="Pasangers">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="676.0" prefWidth="247.0" style="-fx-background-color: #e8e8e8;">
+                     <children>
+                        <Button layoutX="24.0" layoutY="338.0" mnemonicParsing="false" onAction="#OutPassengerFile" prefHeight="0.0" prefWidth="200.0" text="Output Flile">
+                           <font>
+                              <Font name="Cambria Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="24.0" layoutY="392.0" mnemonicParsing="false" onAction="#AddtoFilePassenger" prefHeight="0.0" prefWidth="200.0" text="Add to File">
+                           <font>
+                              <Font name="Cambria Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="24.0" layoutY="449.0" mnemonicParsing="false" onAction="#RedactFilePassenger" prefHeight="0.0" prefWidth="200.0" text="Edit a File">
+                           <font>
+                              <Font name="Cambria Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="24.0" layoutY="506.0" mnemonicParsing="false" onAction="#DeleteFilePassenger" prefHeight="0.0" prefWidth="200.0" text="Delete from File">
+                           <font>
+                              <Font name="Cambria Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="24.0" layoutY="563.0" mnemonicParsing="false" onAction="#SortFilePassenger" prefHeight="0.0" prefWidth="200.0" text="Sort File">
+                           <font>
+                              <Font name="Cambria Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button onAction="#SearchP" layoutX="24.0" layoutY="617.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="200.0" text="Search in File">
+                           <font>
+                              <Font name="Cambria Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <TextArea fx:id="IP" layoutX="13.0" layoutY="33.0" prefHeight="288.0" prefWidth="221.0">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font></TextArea>
+                        <Label alignment="CENTER" layoutX="15.0" layoutY="7.0" text="Information for pasangers">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="12.0" layoutY="33.0" prefHeight="288.0" prefWidth="223.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="247.0" prefHeight="675.0" prefWidth="891.0">
+                     <children>
+                        <Label fx:id="AfP" alignment="CENTER" contentDisplay="CENTER" layoutX="358.0" prefHeight="22.0" prefWidth="176.0" style="-fx-background-color: #e8e8e8;" text="Action" textAlignment="CENTER">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="TAfP" layoutX="15.0" layoutY="37.0" prefHeight="582.0" prefWidth="862.0">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font></TextArea>
+                        <TextField fx:id="TFfP" layoutX="15.0" layoutY="630.0" onKeyPressed="#PressEnterP" prefHeight="31.0" prefWidth="862.0" promptText="Edit">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Pane layoutX="13.0" layoutY="35.0" prefHeight="586.0" prefWidth="866.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </content></Tab>
+  </tabs>
+</TabPane>
